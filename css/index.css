@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+/* line 4, ../web1_Marta/sass/index.sass */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Acme", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* line 11, ../web1_Marta/sass/index.sass */
+p {
+  font-weight: 400;
+  color: #111;
+}
+
+/* line 15, ../web1_Marta/sass/index.sass */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+}
+
+/* line 25, ../web1_Marta/sass/index.sass */
+header .logo {
+  color: white;
+  font-weight: 700;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+/* line 30, ../web1_Marta/sass/index.sass */
+header .navigation {
+  position: relative;
+  display: flex;
+}
+
+/* line 33, ../web1_Marta/sass/index.sass */
+header .navigation li {
+  list-style: none;
+  margin-left: 30px;
+}
+
+/* line 36, ../web1_Marta/sass/index.sass */
+header .navigation li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  transition: 0.7s;
+}
+
+/* line 42, ../web1_Marta/sass/index.sass */
+.navigation li a:hover {
+  font-weight: 500;
+  letter-spacing: 6px;
+  transition: 0.7s;
+  font-size: 1em;
+}
+
+/* line 52, ../web1_Marta/sass/index.sass */
+header.sticky {
+  background: white;
+  padding: 10px 100px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* line 58, ../web1_Marta/sass/index.sass */
+.sticky .logo {
+  color: black;
+}
+
+/* line 60, ../web1_Marta/sass/index.sass */
+.sticky .navigation li a {
+  color: black;
+}
+
+/* line 64, ../web1_Marta/sass/index.sass */
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+
+/* line 72, ../web1_Marta/sass/index.sass */
+.banner .content {
+  max-width: 900px;
+  text-align: center;
+}
+
+/* line 75, ../web1_Marta/sass/index.sass */
+.banner .content h2 {
+  font-size: 5em;
+  color: white;
+}
+
+/* line 78, ../web1_Marta/sass/index.sass */
+.banner .content p {
+  font-size: 1em;
+  color: white;
+}
+
+/* line 81, ../web1_Marta/sass/index.sass */
+.banner .btn {
+  padding: 10px 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 2px;
+  letter-spacing: 2px;
+  font-size: 1em;
+  color: black;
+  background: white;
+  display: inline-block;
+  transition: 0.7s;
+}
+
+/* line 93, ../web1_Marta/sass/index.sass */
+.banner .btn:hover {
+  letter-spacing: 6px;
+  background-color: black;
+  color: white;
+}
+
+/* line 99, ../web1_Marta/sass/index.sass */
+header.sticky.navigation li a {
+  color: black;
+}
+
+/* line 102, ../web1_Marta/sass/index.sass */
+section {
+  padding: 65px;
+}
+
+/* line 105, ../web1_Marta/sass/index.sass */
+.row {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 110, ../web1_Marta/sass/index.sass */
+.row .col {
+  position: relative;
+  width: 48%;
+}
+
+/* line 113, ../web1_Marta/sass/index.sass */
+.row .col .titleT {
+  padding-top: 20px;
+  color: black;
+  font-size: 2em;
+  font-weight: 300;
+}
+
+/* line 118, ../web1_Marta/sass/index.sass */
+.row .col .titleT span {
+  color: #deba1b;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+/* line 123, ../web1_Marta/sass/index.sass */
+.row .col .imgBox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 127, ../web1_Marta/sass/index.sass */
+.row .col .imgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+/* line 136, ../web1_Marta/sass/index.sass */
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* line 143, ../web1_Marta/sass/index.sass */
+.services {
+  padding-top: 65px;
+}
+
+/* line 145, ../web1_Marta/sass/index.sass */
+.services .titleT {
+  color: black;
+  font-size: 2em;
+  font-weight: 300;
+}
+
+/* line 149, ../web1_Marta/sass/index.sass */
+.services .titleT span {
+  color: #deba1b;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+/* line 154, ../web1_Marta/sass/index.sass */
+.services .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+/* line 160, ../web1_Marta/sass/index.sass */
+.services .content .box {
+  width: 340px;
+  margin: 20px;
+  border: 15px solid white;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* line 165, ../web1_Marta/sass/index.sass */
+.services .content .box .imgBox {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+/* line 169, ../web1_Marta/sass/index.sass */
+.services .content .box .imgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* line 176, ../web1_Marta/sass/index.sass */
+.services .content .box .text {
+  padding: 15px 0 5px;
+}
+
+/* line 178, ../web1_Marta/sass/index.sass */
+.services .content .box .text h3 {
+  font-weight: 400;
+  color: black;
+}
+
+/* line 183, ../web1_Marta/sass/index.sass */
+.copyright {
+  padding: 8px 40px;
+  border-top: 1px solid black;
+  text-align: center;
+  background: black;
+}
+
+/* line 188, ../web1_Marta/sass/index.sass */
+.copyright p {
+  color: white;
+}
+
+@media (max-width: 991px) {
+  /* line 193, ../web1_Marta/sass/index.sass */
+  header {
+    padding: 10px 20px;
+  }
+  /* line 195, ../web1_Marta/sass/index.sass */
+  header.sticky {
+    padding: 10px 20px;
+  }
+  /* line 197, ../web1_Marta/sass/index.sass */
+  header .navigation {
+    display: none;
+  }
+  /* line 200, ../web1_Marta/sass/index.sass */
+  header .navigation.active {
+    width: 100%;
+    height: calc(100% - 60px);
+    position: fixed;
+    top: 60px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+  }
+  /* line 211, ../web1_Marta/sass/index.sass */
+  header .navigation li {
+    margin-left: 0;
+  }
+  /* line 213, ../web1_Marta/sass/index.sass */
+  header .navigation li a {
+    color: black;
+    font-size: 1.7em;
+  }
+  /* line 217, ../web1_Marta/sass/index.sass */
+  .burgerMenu {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(../images/menu.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+  /* line 227, ../web1_Marta/sass/index.sass */
+  section {
+    padding: 20px;
+  }
+  /* line 231, ../web1_Marta/sass/index.sass */
+  .banner .content h2 {
+    font-size: 3em;
+  }
+  /* line 233, ../web1_Marta/sass/index.sass */
+  .row {
+    flex-direction: column;
+  }
+  /* line 235, ../web1_Marta/sass/index.sass */
+  .row .col {
+    position: relative;
+    width: 100%;
+  }
+  /* line 238, ../web1_Marta/sass/index.sass */
+  .row .col .imgBox {
+    height: 300px;
+    margin-top: 20px;
+  }
+  /* line 243, ../web1_Marta/sass/index.sass */
+  .services .content {
+    margin-top: 20px;
+  }
+  /* line 245, ../web1_Marta/sass/index.sass */
+  .services .content .box {
+    margin: 10px;
+  }
+  /* line 247, ../web1_Marta/sass/index.sass */
+  .services .content .box .imgBox {
+    height: 260px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

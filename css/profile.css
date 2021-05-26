@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+/* line 4, ../web1_Marta/sass/profile.sass */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Acme", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* line 11, ../web1_Marta/sass/profile.sass */
+p {
+  font-weight: 300;
+  color: #111;
+}
+
+/* line 16, ../web1_Marta/sass/profile.sass */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 10000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+
+/* line 27, ../web1_Marta/sass/profile.sass */
+header .logo {
+  color: white;
+  font-weight: 700;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+/* line 32, ../web1_Marta/sass/profile.sass */
+header .navigation {
+  position: relative;
+  display: flex;
+}
+
+/* line 35, ../web1_Marta/sass/profile.sass */
+header .navigation li {
+  list-style: none;
+  margin-left: 30px;
+}
+
+/* line 38, ../web1_Marta/sass/profile.sass */
+header .navigation li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  transition: 0.7s;
+}
+
+/* line 44, ../web1_Marta/sass/profile.sass */
+.navigation li a:hover {
+  font-weight: 500;
+  letter-spacing: 6px;
+  transition: 0.7s;
+  font-size: 1em;
+}
+
+/* line 52, ../web1_Marta/sass/profile.sass */
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+
+/* line 60, ../web1_Marta/sass/profile.sass */
+.banner .content {
+  max-width: 900px;
+  text-align: center;
+}
+
+/* line 63, ../web1_Marta/sass/profile.sass */
+.banner .content h2 {
+  font-size: 5em;
+  color: white;
+}
+
+@media (max-width: 991px) {
+  /* line 68, ../web1_Marta/sass/profile.sass */
+  header {
+    padding: 10px 20px;
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=profile.css.map */

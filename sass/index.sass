@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap')
+$fontFamily: 'Acme', sans-serif
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: $fontFamily
+  scroll-behavior: smooth
+
+p
+  font-weight: 400
+  color: #111
+
+header
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  padding: 40px 100px
+  z-index: 10000
+  display: flex
+  align-items: center
+  transition: 0.5s
+  .logo
+    color: white
+    font-weight: 700
+    font-size: 2em
+    text-decoration: none
+  .navigation
+    position: relative
+    display: flex
+    li
+      list-style: none
+      margin-left: 30px
+      a
+        text-decoration: none
+        color: white
+        font-weight: 300
+        transition: 0.7s
+
+.navigation li a:hover
+  font-weight: 500
+  letter-spacing: 6px
+  transition: 0.7s
+  font-size: 1em
+
+
+
+
+
+header.sticky
+    background: white
+    padding: 10px 100px
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5)
+
+.sticky
+  .logo
+    color: black
+  .navigation li a
+    color: black
+
+
+.banner
+  position: relative
+  width: 100%
+  min-height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+  background: black
+  .content
+    max-width: 900px
+    text-align: center
+    h2
+      font-size: 5em
+      color: white
+    p
+      font-size: 1em
+      color: white
+  .btn
+    padding: 10px 30px
+    margin-top: 20px
+    text-transform: uppercase
+    text-decoration: none
+    border-radius: 2px
+    letter-spacing: 2px
+    font-size: 1em
+    color: black
+    background: white
+    display: inline-block
+    transition: 0.7s
+  .btn:hover
+    letter-spacing: 6px
+    background-color: black
+    color: white
+
+
+header.sticky.navigation li a
+  color: black
+
+section
+  padding: 65px
+
+.row
+  position: relative
+  width: 100%
+  display: flex
+  justify-content: space-between
+  .col
+    position: relative
+    width: 48%
+    .titleT
+      padding-top: 20px
+      color: black
+      font-size: 2em
+      font-weight: 300
+      span
+        color: #deba1b
+        font-weight: 700
+        font-size: 1.5em
+
+    .imgBox
+      position: relative
+      width: 100%
+      height: 100%
+      img
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 350px
+        object-fit: cover
+
+
+.title
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+
+.services
+  padding-top: 65px
+  .titleT
+    color: black
+    font-size: 2em
+    font-weight: 300
+    span
+      color: #deba1b
+      font-weight: 700
+      font-size: 1.5em
+
+  .content
+    display: flex
+    justify-content: center
+    flex-direction: row-reverse
+    flex-wrap: wrap
+    margin-top: 40px
+    .box
+      width: 340px
+      margin: 20px
+      border: 15px solid white
+      box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08)
+      .imgBox
+        position: relative
+        width: 100%
+        height: 300px
+        img
+          position: absolute
+          top: 0
+          left: 0
+          width: 100%
+          height: 100%
+          object-fit: cover
+      .text
+        padding: 15px 0 5px
+        h3
+          font-weight: 400
+          color: black
+
+
+.copyright
+  padding: 8px 40px
+  border-top: 1px solid black
+  text-align: center
+  background: black
+  p
+    color: white
+
+
+@media (max-width: 991px)
+  header
+    padding: 10px 20px
+  header.sticky
+    padding: 10px 20px
+  header .navigation
+    display: none
+
+  header .navigation.active
+    width: 100%
+    height: calc(100% - 60px)
+    position: fixed
+    top: 60px
+    left: 0
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    background: white
+  header .navigation li
+    margin-left: 0
+    a
+      color: black
+      font-size: 1.7em
+
+  .burgerMenu
+    position: relative
+    width: 40px
+    height: 40px
+    background: url(../images/menu.png)
+    background-size: 40px
+    background-repeat: no-repeat
+    background-position: center
+    cursor: pointer
+
+  section
+    padding: 20px
+
+  .banner .content
+    h2
+      font-size: 3em
+  .row
+    flex-direction: column
+    .col
+      position: relative
+      width: 100%
+      .imgBox
+        height: 300px
+        margin-top: 20px
+
+  .services
+    .content
+      margin-top: 20px
+      .box
+        margin: 10px
+        .imgBox
+          height: 260px
+
+
+
+
